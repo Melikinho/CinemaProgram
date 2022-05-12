@@ -72,12 +72,11 @@
             myList.Add(age);
         }
     }
+
     public void CalculateAge()
     {
         List<int> myList = new List<int>();
         Console.WriteLine("Under Construction");
     }
-
-  
 }
     
