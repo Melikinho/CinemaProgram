@@ -63,12 +63,12 @@
         }
         
     }
-    public static void CalculateAge(int age)
+   /* public static void CalculateAge(int age)  //TEST METHOD//
     {
         string age1 = Convert.ToString(age);
         int sum = 0;
         for (int i = 0; i < age1.Length; i++)
             sum += Convert.ToInt32(age1.Substring(i, 1);
-    }
+    }  */
 }
     
