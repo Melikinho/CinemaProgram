@@ -11,6 +11,8 @@
         int result = 0;
         int age;
         int person;
+        List<int> myList = new List<int>();
+        // Räknar summan av alla bio biljettter // int total = myList.Sum();
 
         do
         {
@@ -23,7 +25,7 @@
                     break;
                 case 1:
                     Console.WriteLine("Enter your age: ");
-                    Task.Delay(50);
+                    Task.Delay(500);
                     AddAge();
                     break;
 
@@ -32,11 +34,13 @@
                     break;
                 
                 case 3:
+                    Console.WriteLine("you are at stage 3");
                     
                     break;
                 
                 case 4:
-                    
+                    Console.WriteLine("you are at stage 3");
+
                     break;
 
                 default:
@@ -48,27 +52,30 @@
         while (false);
     }
     public static void AddAge() {
-        
+        List<int> myList = new List<int>();
+
+
         int age = int.Parse(Console.ReadLine());
-        if (age < 20) 
+        if (age < 20)
         {
             Console.WriteLine("You qualify for youth price. 80 SEK");
-
-        }   if(age > 64)
+            myList.Add(age);
+        }
+            if (age > 64)
             {
                 Console.WriteLine("You qualify for pensioner price. 90 SEK");
+                myList.Add(age);
             }
-        else {
+        else
+        {
             Console.WriteLine("You qualify for Standard price. 120 SEK");
+            myList.Add(age);
         }
-        
     }
-    public static void CalculateAge(int age)
+    public void CalculateAge()
     {
-        string age1 = Convert.ToString(age);
-        int sum = 0;
-        for (int i = 0; i < age1.Length; i++)
-            sum += Convert.ToInt32(age1.Substring(i, 1);
+        List<int> myList = new List<int>();
+        Console.WriteLine("Under Construction");
     }
 }
     
